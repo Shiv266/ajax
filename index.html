@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Jquery</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--stylesheet-->
+    <link rel="stylesheet" href="jq.css">
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+     <!--bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+
+
+   </head>
+   <body>
+
+	<div class="cl">
+
+<div class="container-fluid">
+<div class="row">
+<div class="title col-sm-12 col-md-12 col-xl-12"> 
+<div class="jumbotron bg-Dark">
+  <h1 class="display-4 text-center">Movie Information</h1>
+  <!-- class to display poster -->
+ <div class="poster text-center">
+  </div>
+   <!-- input form -->
+   <div class="label">
+  <div class="input-group input-group-lg">
+   <div class="input-group-prepend">
+   <span class="input-group-text" id="inputGroup-sizing-lg">Title</span>
+   </div>
+   <input type="text" class="form-control" id="title" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  </div>
+   <br>
+
+   <div class="input-group input-group-lg">
+   <div class="input-group-prepend">
+   <span class="input-group-text" id="inputGroup-sizing-lg">ID</span>
+   </div>
+   <input type="text" class="form-control" id="ID" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+   </div><br>
+
+  <div class="input-group input-group-lg">
+   <div class="input-group-prepend">
+   <span class="input-group-text" id="inputGroup-sizing-lg">Year</span>
+  </div>
+  <input type="text" class="form-control" id="year" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  </div><br>
+
+ <button type="button" class="btn btn-warning" id="click">Search</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- input form end -->
+
+<!-- displaying API info -->
+ <dl class="row">
+  <div class="col-sm-12 back" style="display:none">
+  <div class="content">
+
+                        
+   <dt class="col-sm-3 data">Title</dt>
+  <dd class="col-sm-9" id="titl"></dd>
+
+  <dt class="col-sm-3 data">Year</dt>
+  <dd class="col-sm-9" id="Year"></dd>
+
+  <dt class="col-sm-3 data">Rated</dt>
+  <dd class="col-sm-9" id="Rated"></dd>
+
+  <dt class="col-sm-3 data">Released</dt>
+  <dd class="col-sm-9" id="Released"></dd>
+
+  <dt class="col-sm-3 data">Runtime</dt>
+  <dd class="col-sm-9" id="Runtime"></dd>
+
+  <dt class="col-sm-3 data">Genre</dt>
+  <dd class="col-sm-9" id="Genre"></dd>
+
+  <dt class="col-sm-3 data">Director</dt>
+  <dd class="col-sm-9" id="Director"></dd>
+
+  <dt class="col-sm-3 data">Writer</dt>
+  <dd class="col-sm-9" id="Writer"></dd>
+
+  <dt class="col-sm-3 data">Actors</dt>
+  <dd class="col-sm-9" id="Actors"></dd>
+
+  <dt class="col-sm-3 data">Plot</dt>
+  <dd class="col-sm-9" id="Plot"></dd>
+
+  <dt class="col-sm-3 data">Language</dt>
+  <dd class="col-sm-9" id="Language"></dd>
+
+  <dt class="col-sm-3 data">Country</dt>
+  <dd class="col-sm-9" id="Country"></dd>
+
+  <dt class="col-sm-3 data">Awards</dt>
+  <dd class="col-sm-9" id="Awards"></dd>
+
+  <dt class="col-sm-3 data">Ratings</dt>
+  <dd class="col-sm-9" id="Ratings"></dd>
+
+  <dt class="col-sm-3 data">imdbID</dt>
+  <dd class="col-sm-9" id="imdbID"></dd>
+
+ <dt class="col-sm-3 data">Type</dt>
+  <dd class="col-sm-9" id="Type"></dd>
+
+   <dt class="col-sm-3 data">DVD</dt>
+  <dd class="col-sm-9" id="DVD"></dd>
+
+   <dt class="col-sm-3 data">BoxOffice</dt>
+  <dd class="col-sm-9" id="BoxOffice"></dd>
+
+   <dt class="col-sm-3 data">Production</dt>
+  <dd class="col-sm-9" id="Production"></dd>
+
+   <dt class="col-sm-3 data">Website</dt>
+  <dd class="col-sm-9" id="Website"></dd>
+
+   <dt class="col-sm-3 data">Metascore</dt>
+  <dd class="col-sm-9" id="Metascore"></dd>  
+
+   <dt class="col-sm-3 data">imdbRating</dt>
+  <dd class="col-sm-9" id="imdbRating"></dd>  
+
+   <dt class="col-sm-3 data">imdbVotes</dt>
+  <dd class="col-sm-9" id="imdbVotes"></dd>  
+</dl>
+
+ </div>
+ </div>
+ </div>
+ </div>          
+ </div>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+    <!-- jquery scripts -->
+    <script src="jquery-3.3.1.min.js"></script>
+     <script src="jq.js"></script>
+    
+</body>
+</html>
