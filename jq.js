@@ -6,7 +6,7 @@
             $.ajax({
                 type: 'GET',
                 dataType: 'json',
-                url: 'http://www.omdbapi.com/?i=tt3896198&apikey=b56f5d72',
+                url: 'https://www.omdbapi.com/?i=tt3896198&apikey=b56f5d72',
                 success: (response) => {
                     
                     
